@@ -7,7 +7,7 @@ apt-get install -y qemu libvirt-bin
 
 mkdir -p ~/os/toolchain
 if [ ! -d ~/os/pintos/src ]; then
-  git clone https://github.com/jhu-cs318/pintos.git ~/os
+  git clone https://github.com/jhu-cs318/pintos.git ~/os/pintos
 fi
 if ! hash pintos 2>/dev/null; then
   echo "Building pintos utility tools..."
