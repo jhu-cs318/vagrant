@@ -7,4 +7,8 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_x11 = true
   config.vm.hostname = "pintos"
   config.vm.provision :shell, path: "bootstrap.sh"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 2048
+  end
 end
